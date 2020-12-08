@@ -24,7 +24,6 @@ export const InstaCash = () => {
     const fetchMonthlyAmount = async (floatValue, quote) => {
         try {
             const body = { floatValue, quote };
-            console.log(body);
             const response = await fetch('/api/monthyAmount', { method: 'POST', body: JSON.stringify(body) });
             const { monthly_amount } = await response.json();
             setResult(monthly_amount);

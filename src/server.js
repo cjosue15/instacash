@@ -19,7 +19,6 @@ export const server = () => {
             this.post('/api/monthyAmount', (schema, request) => {
                 const data = JSON.parse(request.requestBody);
                 console.log(data);
-
                 return { monthly_amount: 382.5912 };
             });
         },

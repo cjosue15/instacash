@@ -22,7 +22,7 @@ export const Search = () => {
     const handleRange = (e) => {
         setValues({
             ...values,
-            quote: e.target.value,
+            quote: Number(e.target.value),
         });
     };
 
