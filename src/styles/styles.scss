@@ -1,0 +1,10 @@
+@import './base/base';
+@import './base/colors';
+@import './mixin/responsive';
+
+// Components
+@import './components/instaCash';
+@import './components/result';
+@import './components/search';
+@import './components/loader';
+@import './components/input_range';

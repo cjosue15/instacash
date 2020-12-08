@@ -1,0 +1,47 @@
+.result {
+    padding: 1em;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.125);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    &__pay {
+        color: $black;
+        font-size: 30px;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        & > div {
+            border-right: 1px dashed;
+            padding: 10px 0;
+
+            span {
+                font-weight: 600;
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        @include media-query(500) {
+            grid-template-columns: repeat(1, 1fr);
+
+            & > div {
+                border: none;
+                border-bottom: 1px dashed;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+}

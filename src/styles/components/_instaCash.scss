@@ -1,0 +1,26 @@
+.instaCash {
+    width: 100%;
+    max-width: calc(550px + 2em);
+    background: $white;
+    padding: 2em;
+    margin: 0 2em;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+
+    &__title {
+        position: relative;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: $red;
+            width: 30px;
+            height: 2px;
+            bottom: -15px;
+        }
+    }
+}
